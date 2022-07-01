@@ -74,4 +74,19 @@ function FindVowels(sentence){
 
 document.write(FindVowels("I Love My Country and I Love My Land"));
 
+document.write("<br>")
+document.write("<br>")
+
 //------------------- End -------------------//
+
+//============ Start Problem 6 =============//
+//Find Duplicate Number from array//
+
+const Numbers = [2, 3, 3, 8, 9, 5, 6, 8, 9, 3, 5]
+
+const Duplicates = Numbers.filter(function(value, index, array){
+  return array.indexOf(value) === index;
+});
+
+document.write(Duplicates);
+//============== END ===============//
