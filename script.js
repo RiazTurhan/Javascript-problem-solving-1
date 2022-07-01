@@ -6,7 +6,6 @@ function LudoMark(){
     document.getElementById('demo').innerHTML = (b);
 }
 
-// "yes" my first Problem is solving without someone help ,
 //Now w3School give us easy way. let's try it.
 function randomNumbers (min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -33,4 +32,46 @@ document.write(RollNumbers.sort(function (a, b){
   return a - b;
 }));
 
+document.write("<br>")
+document.write("<br>")
+
 //-------------------- End ------------------//
+
+//============ Start Problem 4 ============//
+//Find Leap Year//
+
+function LeapYear(year){
+
+  if((year % 400 === 0) || ((year % 4 === 0) && (year % 100 !== 0))){
+    document.write(`${year} is a Leap year`)
+  } else{
+    document.write(`${year} is not a Leap year`)
+  }
+}
+
+LeapYear(2012);
+
+document.write("<br>")
+document.write("<br>")
+//============== END =================//
+
+//--------------- Start Problem Solving 5 ------------------//
+//find vowels numbers from array//
+
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+function FindVowels(sentence){
+  let count = 0;
+  const letters = Array.from(sentence)
+
+  letters.forEach(function(value){
+    if (vowels.includes(value)){
+      count ++
+    }
+  });
+  return count
+};
+
+document.write(FindVowels("I Love My Country and I Love My Land"));
+
+//------------------- End -------------------//
